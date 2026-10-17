@@ -4,203 +4,451 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The personal portfolio of Ekoyo Bright Ebubechukwu, a student and tech enthusiast.">
+  <meta
+    name="description"
+    content="The portfolio of Ekoyo Bright Ebubechukwu, a student and tech enthusiast exploring web development."
+  >
+  <meta name="theme-color" content="#0b0b0f">
 
   <title>Ekoyo Bright Ebubechukwu | Portfolio</title>
 
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="header">
-    <a href="#home" class="logo">EB<span>.</span></a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#home" aria-label="Ekoyo Bright home">
+        EB<span>.</span>
+      </a>
 
-    <nav class="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="#contact">
+        Let's Connect <span aria-hidden="true">↗</span>
+      </a>
+    </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-
-        <h1>
-          Hi, I'm <span>Ekoyo Bright</span>
-        </h1>
-
-        <h2>Student and Tech Enthusiast</h2>
-
-        <p class="intro">
-          I'm passionate about technology, eager to learn, and exploring
-          how digital ideas can become useful real-world solutions.
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          WELCOME TO MY DIGITAL SPACE
         </p>
 
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary">Explore My Work</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
+        <h1>
+          Building my future
+          <span class="gradient-text">one line at a time.</span>
+        </h1>
+
+        <p class="hero-role">
+          I'm <strong>Ekoyo Bright Ebubechukwu</strong>
+          <span class="role-divider" aria-hidden="true">/</span>
+          Student &amp; Tech Enthusiast
+        </p>
+
+        <p class="hero-description">
+          I'm passionate about technology, eager to learn, and exploring
+          how digital ideas can become useful real-world solutions.
+          This is where I share my learning journey and the projects
+          I'm building along the way.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">
+            Explore My Work <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="btn btn-outline" href="#contact">
+            Get In Touch
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="terminal-mark" aria-hidden="true">&gt;_</span>
+          <span>Curious mind. Growing skills. Building consistently.</span>
         </div>
       </div>
 
-      <div class="hero-image">
-        <div class="image-frame">
-          <img
-            src="images/profile.jpg"
-            alt="Portrait of Ekoyo Bright Ebubechukwu"
-          >
+      <div class="hero-visual">
+        <div class="visual-grid" aria-hidden="true"></div>
+
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+
+        <div class="profile-shell">
+          <div class="profile-topbar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>PROFILE.EXE</p>
+          </div>
+
+          <div class="profile-photo">
+            <img
+  src="images/profile.jpg"
+  alt="Profile photo"
+  class="profile-photo"
+>
+          </div>
+
+          <div class="profile-caption">
+            <div>
+              <span class="caption-label">CURRENT MODE</span>
+              <p>Learning &amp; Building</p>
+            </div>
+
+            <span class="live-indicator">
+              <span aria-hidden="true"></span>
+              ACTIVE
+            </span>
+          </div>
         </div>
-        <span class="image-decoration"></span>
+
+        <div class="floating-code code-top" aria-hidden="true">
+          <span>01</span> &lt;learn /&gt;
+        </div>
+
+        <div class="floating-code code-bottom" aria-hidden="true">
+          <span>02</span> build<span class="code-bracket">()</span>;
+        </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <p class="eyebrow">GET TO KNOW ME</p>
-      <h2>About <span>Me</span></h2>
-      <p>
-        I'm a student and technology enthusiast building my knowledge
-        through learning and practical projects. I'm interested in web
-        development and continuously working to improve my skills.
+    <!-- ABOUT -->
+    <section class="section-wrap section-block" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">01 / THE PERSON BEHIND THE CODE</p>
+        <h2>A little about <span class="gradient-text">me.</span></h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-copy">
+          <p class="large-copy">
+            I'm at the beginning of my technology journey,
+            and I'm here to learn, experiment, and grow.
+          </p>
+
+          <p>
+            I'm a student and tech enthusiast building my knowledge
+            through study and practical projects. I'm particularly
+            interested in web development and how technology can
+            solve everyday problems.
+          </p>
+
+          <p>
+            I believe progress comes from understanding the fundamentals,
+            practising consistently, and being willing to learn from
+            mistakes. This portfolio will grow as my skills and projects do.
+          </p>
+        </div>
+
+        <aside class="about-terminal" aria-label="My approach to learning">
+          <div class="terminal-header">
+            <span class="terminal-lights" aria-hidden="true">
+              <i></i><i></i><i></i>
+            </span>
+            <span>about_me.txt</span>
+          </div>
+
+          <div class="terminal-body">
+            <p><span class="terminal-prompt">&gt;</span> whoami</p>
+            <p class="terminal-output">Student &amp; Tech Enthusiast</p>
+
+            <p><span class="terminal-prompt">&gt;</span> interests</p>
+            <p class="terminal-output">Web Development, Technology</p>
+
+            <p><span class="terminal-prompt">&gt;</span> mindset</p>
+            <p class="terminal-output">Learn. Practise. Improve.</p>
+
+            <p class="terminal-last">
+              <span class="terminal-prompt">&gt;</span>
+              <span class="cursor-block" aria-hidden="true"></span>
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section-wrap section-block" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">02 / MY LEARNING PATH</p>
+        <h2>Skills in <span class="gradient-text">progress.</span></h2>
+        <p class="section-description">
+          Technologies I'm currently exploring and developing my skills in.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-top">
+            <span class="skill-symbol" aria-hidden="true">&lt;/&gt;</span>
+            <span class="skill-index">01</span>
+          </div>
+          <h3>HTML</h3>
+          <p>Learning to structure meaningful, accessible web pages.</p>
+          <div class="skill-tags">
+            <span>Structure</span>
+            <span>Semantics</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-top">
+            <span class="skill-symbol" aria-hidden="true">#</span>
+            <span class="skill-index">02</span>
+          </div>
+          <h3>CSS</h3>
+          <p>Exploring visual design, layouts, animations, and responsiveness.</p>
+          <div class="skill-tags">
+            <span>Styling</span>
+            <span>Layouts</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-top">
+            <span class="skill-symbol" aria-hidden="true">JS</span>
+            <span class="skill-index">03</span>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Exploring browser behaviour and interactive web experiences.</p>
+          <div class="skill-tags">
+            <span>Logic</span>
+            <span>Interactivity</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-top">
+            <span class="skill-symbol" aria-hidden="true">PHP</span>
+            <span class="skill-index">04</span>
+          </div>
+          <h3>PHP &amp; Laravel</h3>
+          <p>Learning the foundations of backend development and web applications.</p>
+          <div class="skill-tags">
+            <span>Backend</span>
+            <span>Learning</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="learning-note">
+        <span aria-hidden="true">✳</span>
+        These are learning areas, not claims of professional mastery.
       </p>
     </section>
 
-    <section class="section" id="skills">
-      <p class="eyebrow">WHAT I'M LEARNING</p>
-      <h2>My <span>Skills</span></h2>
-      <div class="card-grid">
-        <article class="info-card">
-          <h3>HTML</h3>
-          <p>Learning to structure web pages.</p>
+    <!-- PROJECTS -->
+    <section class="section-wrap section-block" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">03 / EXPERIMENTS &amp; IDEAS</p>
+        <h2>Things I'm <span class="gradient-text">building.</span></h2>
+        <p class="section-description">
+          Small steps today, better projects tomorrow.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-preview portfolio-preview" aria-hidden="true">
+            <div class="preview-window">
+              <div class="preview-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="preview-content">
+                <div class="preview-line short"></div>
+                <div class="preview-title">MY PORTFOLIO<span>.</span></div>
+                <div class="preview-line"></div>
+                <div class="preview-line medium"></div>
+                <div class="preview-button"></div>
+              </div>
+            </div>
+            <span class="preview-tag">HTML / CSS / JS</span>
+          </div>
+
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-label">PERSONAL PROJECT</span>
+              <span class="project-number">01</span>
+            </div>
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+              A personal website showcasing my interests, learning journey,
+              and work as I continue to develop my skills.
+            </p>
+
+            <div class="project-footer">
+              <span class="project-status">
+                <span aria-hidden="true"></span>
+                Live website
+              </span>
+
+              <a
+                class="project-link"
+                href="https://ebubechukwubright10.github.io/bright-portfolio/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Site <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
         </article>
-        <article class="info-card">
-          <h3>CSS</h3>
-          <p>Learning layouts, styling, and responsive design.</p>
-        </article>
-        <article class="info-card">
-          <h3>JavaScript</h3>
-          <p>Exploring interactivity and browser behaviour.</p>
-        </article>
-        <article class="info-card">
-          <h3>PHP & Laravel</h3>
-          <p>Exploring backend development and web applications.</p>
+
+        <article class="project-card">
+          <div class="project-preview movie-preview" aria-hidden="true">
+            <div class="movie-interface">
+              <div class="movie-brand">MOVIE<span>HUB</span></div>
+              <div class="movie-feature">
+                <div class="movie-poster"></div>
+                <div class="movie-details">
+                  <div class="movie-line title-line"></div>
+                  <div class="movie-line"></div>
+                  <div class="movie-line small-line"></div>
+                  <div class="movie-rating">★ 8.8</div>
+                </div>
+              </div>
+              <div class="movie-bottom-lines">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <span class="preview-tag">MOVIE INFORMATION</span>
+          </div>
+
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-label">IN PROGRESS</span>
+              <span class="project-number">02</span>
+            </div>
+
+            <h3>Movie Hub</h3>
+
+            <p>
+              A movie-information website concept focused on presenting
+              movie titles, posters, ratings, and details. More features
+              will be added as development continues.
+            </p>
+
+            <div class="project-footer">
+              <span class="project-status status-progress">
+                <span aria-hidden="true"></span>
+                In development
+              </span>
+
+              <span class="project-link muted-link">Coming along</span>
+            </div>
+          </div>
         </article>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <p class="eyebrow">MY LEARNING JOURNEY</p>
-      <h2>Featured <span>Projects</span></h2>
-      <div class="card-grid">
-        <article class="info-card">
-          <p class="project-label">PERSONAL PROJECT</p>
-          <h3>My Portfolio</h3>
-          <p>A personal website I'm building to present my interests,
-             learning journey, and future work.</p>
+    <!-- CONTACT -->
+    <section class="section-wrap section-block contact" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">04 / OPEN A CHANNEL</p>
+        <h2>Let's connect<span class="gradient-text">.</span></h2>
+        <p class="section-description">
+          Have a question, an idea, or an opportunity to share?
+          Choose the channel that works best for you.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <article class="contact-card">
+          <div class="contact-icon" aria-hidden="true">✉</div>
+          <p class="contact-type">EMAIL</p>
+          <h3>Send an email</h3>
+          <p>For enquiries, project discussions, and opportunities.</p>
+          <a class="contact-link"
+             href="mailto:ebubechukwubright10@gmail.com">
+            Email me <span aria-hidden="true">↗</span>
+          </a>
         </article>
-        <article class="info-card">
-          <p class="project-label">IN PROGRESS</p>
-          <h3>Movie Hub</h3>
-          <p>A movie-information website concept. I'll add its current
-             features and progress as I develop it.</p>
+
+        <article class="contact-card">
+          <div class="contact-icon" aria-hidden="true">☎</div>
+          <p class="contact-type">PHONE</p>
+          <h3>Let's talk</h3>
+          <p>Reach me directly by phone.</p>
+          <a class="contact-link"
+             href="tel:+2349163120209">
+            Call me <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="contact-card whatsapp-card">
+          <div class="contact-icon" aria-hidden="true">◉</div>
+          <p class="contact-type">WHATSAPP</p>
+          <h3>Start a chat</h3>
+          <p>Send a message and get the conversation started.</p>
+          <a class="contact-link"
+             href="https://wa.me/2349163120209"
+             target="_blank"
+             rel="noopener noreferrer">
+            Message me <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="contact-card">
+          <div class="contact-icon" aria-hidden="true">&lt;/&gt;</div>
+          <p class="contact-type">CODE &amp; PROJECTS</p>
+          <h3>GitHub</h3>
+          <p>Explore my repository and follow my coding journey.</p>
+          <a class="contact-link"
+             href="https://github.com/ebubechukwubright10/bright-portfolio"
+             target="_blank"
+             rel="noopener noreferrer">
+            View repository <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="contact-card">
+          <div class="contact-icon facebook-icon" aria-hidden="true">f</div>
+          <p class="contact-type">SOCIAL</p>
+          <h3>Facebook</h3>
+          <p>Connect with me on Facebook.</p>
+          <a class="contact-link"
+             href="https://www.facebook.com/share/18eGRkYZWV/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Visit profile <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="contact-card">
+          <div class="contact-icon linkedin-icon" aria-hidden="true">in</div>
+          <p class="contact-type">PROFESSIONAL NETWORK</p>
+          <h3>LinkedIn</h3>
+          <p>Professional connections as I continue to learn and grow.</p>
+          <span class="profile-status">Profile link coming soon</span>
         </article>
       </div>
     </section>
-
-<section class="section contact" id="contact">
-  <p class="eyebrow">LET'S CONNECT</p>
-  <h2>Let's Start a <span>Conversation</span></h2>
-
-  <p class="contact-intro">
-    Have a question, an idea, or an opportunity?
-    I'd love to hear from you. Choose your preferred way to connect.
-  </p>
-
-  <div class="contact-grid">
-    <article class="contact-card">
-      <div class="contact-icon" aria-hidden="true">✉</div>
-      <p class="contact-type">EMAIL</p>
-      <h3>Send an Email</h3>
-      <p>For enquiries, project discussions, and opportunities.</p>
-      <a class="contact-link"
-         href="mailto:ebubechukwubright10@gmail.com">
-        Email Me <span aria-hidden="true">↗</span>
-      </a>
-    </article>
-
-    <article class="contact-card">
-      <div class="contact-icon" aria-hidden="true">☎</div>
-      <p class="contact-type">PHONE</p>
-      <h3>Let's Talk</h3>
-      <p>Prefer a direct conversation? You can reach me by phone.</p>
-      <a class="contact-link"
-         href="tel:+2349163120209">
-        Call Me <span aria-hidden="true">↗</span>
-      </a>
-    </article>
-
-    <article class="contact-card whatsapp-card">
-      <div class="contact-icon" aria-hidden="true">◉</div>
-      <p class="contact-type">WHATSAPP</p>
-      <h3>Chat With Me</h3>
-      <p>Send a message and let's get the conversation started.</p>
-      <a class="contact-link"
-         href="https://wa.me/2349163120209"
-         target="_blank"
-         rel="noopener noreferrer">
-        Message on WhatsApp <span aria-hidden="true">↗</span>
-      </a>
-    </article>
-
-    <article class="contact-card">
-      <div class="contact-icon" aria-hidden="true">&lt;/&gt;</div>
-      <p class="contact-type">CODE & PROJECTS</p>
-      <h3>GitHub</h3>
-      <p>Explore my portfolio and follow my development journey.</p>
-      <a class="contact-link"
-         href="https://github.com/ebubechukwubright10/bright-portfolio"
-         target="_blank"
-         rel="noopener noreferrer">
-        View My Repository <span aria-hidden="true">↗</span>
-      </a>
-    </article>
-
-    <article class="contact-card">
-      <div class="contact-icon" aria-hidden="true">f</div>
-      <p class="contact-type">SOCIAL</p>
-      <h3>Facebook</h3>
-      <p>Connect with me on Facebook.</p>
-      <a class="contact-link"
-         href="https://www.facebook.com/share/18eGRkYZWV/"
-         target="_blank"
-         rel="noopener noreferrer">
-        Visit Facebook <span aria-hidden="true">↗</span>
-      </a>
-    </article>
-
-    <article class="contact-card">
-      <div class="contact-icon" aria-hidden="true">in</div>
-      <p class="contact-type">PROFESSIONAL NETWORK</p>
-      <h3>LinkedIn</h3>
-      <p>Connect professionally as I continue to learn and grow.</p>
-      <span class="profile-status">Profile link coming soon</span>
-    </article>
-  </div>
-</section>
-
-</section>
-
-</section>
-
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Ekoyo Bright Ebubechukwu.</p>
+  <footer class="site-footer">
+    <a class="footer-logo" href="#home">EB<span>.</span></a>
     <p>Built with curiosity and a passion for technology.</p>
+    <p class="copyright">
+      &copy; <span id="year"></span> Ekoyo Bright Ebubechukwu
+    </p>
+    <a class="back-to-top" href="#home">Back to top ↑</a>
   </footer>
-
 </body>
 </html>

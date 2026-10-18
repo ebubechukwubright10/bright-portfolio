@@ -440,6 +440,73 @@
         </article>
       </div>
     </section>
+    <section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2>Let's Talk</h2>
+
+    <p>
+      Have a project in mind or want to work together?
+      Send me a message!
+    </p>
+
+    <form action="https://formspree.io/f/mgaoqwyo" method="POST">
+      <label for="name">Your Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      >
+
+      <label for="email">Your Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      >
+
+      <label for="subject">Subject</label>
+      <input
+        type="text"
+        id="subject"
+        name="subject"
+        placeholder="What would you like to discuss?"
+        required
+      >
+
+      <label for="message">Your Message</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="6"
+        placeholder="Write your message here..."
+        required
+      ></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <div
+  id="form-popup"
+  class="form-popup"
+  role="status"
+  aria-live="polite"
+  hidden
+>
+  <div class="popup-icon">✓</div>
+  <h3>Message Sent Successfully!</h3>
+  <p>
+    Thank you for reaching out.
+    I'll get back to you as soon as possible.
+  </p>
+  <button type="button" id="popup-close">
+    Continue Browsing
+  </button>
+</div>
+  </div>
+</section>
   </main>
 
   <footer class="site-footer">
@@ -450,5 +517,7 @@
     </p>
     <a class="back-to-top" href="#home">Back to top ↑</a>
   </footer>
+  <script src="script.js"></script>
+</body>
 </body>
 </html>
